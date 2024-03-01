@@ -6,8 +6,6 @@ import {
 import { client } from "../../tina/__generated__/client";
 import { useTina } from "tinacms/dist/react";
 import { Page } from "../components/layouts/page/Page";
-import { MantineProvider } from "@mantine/core";
-import { theme } from "../styles/theme";
 import Menu from "../components/sections/menu/Menu";
 
 export default function Slug(
@@ -16,10 +14,10 @@ export default function Slug(
   const { data } = useTina(props);
 
   return (
-    <MantineProvider theme={theme}>
+    <>
       <Menu {...data?.menu} />
       <Page {...data?.page} />
-    </MantineProvider>
+    </>
   );
 }
 

@@ -31,6 +31,7 @@ function Columns(props: Props) {
       {blocks?.map((block, index) => {
         return (
           <MotionCol
+            component={motion.div}
             key={index}
             span={width ?? 6}
             initial={{ opacity: 0, translateY: 50 }}

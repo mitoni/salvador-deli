@@ -23,6 +23,7 @@ function Bubble(props: Props) {
         opacity: 0.1;
         border-radius: 100%;
         filter: blur(66px);
+        pointer-events: none;
       `}
       {...args}
     >

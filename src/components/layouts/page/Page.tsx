@@ -8,7 +8,6 @@ import { columns } from "../../sections/columns/Columns";
 import { css } from "@emotion/css";
 import Hero from "../../sections/hero/Hero";
 import Footer from "../../sections/footer/Footer";
-import { tinaField } from "tinacms/dist/react";
 import { getComponentFromTypeName } from "../../../../utils/components";
 import { bubble } from "../../sections/bubble/Bubble";
 import { background_image } from "../../sections/background-image/BackgroundImage";
@@ -20,7 +19,7 @@ function Page(props: Props) {
 
   return (
     <main
-      data-tina-field={tinaField(props, "sections")}
+      // data-tina-field={tinaField(props, "sections")}
       className={css`
         width: 1024px;
         margin: 0 auto 0 auto;

@@ -2,6 +2,8 @@ import { createTheme } from "@mantine/core";
 
 export const theme = createTheme({
   fontFamily: "Outfit",
+  primaryColor: "gray",
+  primaryShade: 9,
   headings: {
     fontFamily: "Boska",
     sizes: {

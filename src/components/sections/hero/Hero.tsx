@@ -8,7 +8,7 @@ function Hero() {
   return (
     <Flex
       className={css`
-        height: 150vh;
+        height: 133vh;
         width: 100%;
       `}
     >
