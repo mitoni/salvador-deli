@@ -30,12 +30,12 @@ sections:
             content_align: end
             _template: rich_text
       - paragraphs:
-          - image: ''
+          - image: /uploads/courtney and linda.jpg
             _template: image
     width: 6
     id: who-are-we
     _template: columns
-  - url: ''
+  - url: /uploads/sandwich.png
     position: left
     offset: -8
     _template: background_image
@@ -84,7 +84,7 @@ sections:
     width: 4
     id: info
     _template: columns
-  - url: ''
+  - url: /uploads/flatbread_tomato.png
     offset: 10
     _template: background_image
 ---
