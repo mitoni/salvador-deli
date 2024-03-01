@@ -35,8 +35,7 @@ sections:
     width: 6
     id: who-are-we
     _template: columns
-  - url: >-
-      /mito_11_top_view_of_an_appetising_healthy_sandwich_on_a_white_b_5a177771-cb33-443f-acef-5bd368943525.png
+  - url: ''
     position: left
     offset: -8
     _template: background_image
@@ -86,7 +85,7 @@ sections:
     id: info
     _template: columns
   - url: >-
-      /mito_11_top_view_of_an_appetising_healthy_flatbread_with_tomato_83415571-3545-4684-823a-a3fc8ad8efae.png
+      /uploads/mito_11_top_view_of_an_appetising_healthy_flatbread_with_tomato_83415571-3545-4684-823a-a3fc8ad8efae.png
     offset: 10
     _template: background_image
 ---
