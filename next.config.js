@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  images: {
+    domains: ["assets.tina.io"],
+  },
+
   async rewrites() {
     return [
       {
