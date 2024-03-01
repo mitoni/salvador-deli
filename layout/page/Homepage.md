@@ -51,10 +51,6 @@ sections:
         _template: buttons
     id: tides-and-tastings
     _template: centered
-  - position: left
-    color1: '#FFF9DE'
-    color2: '#FFD3B0'
-    _template: Bubble
   - blocks:
       - paragraphs:
           - content: |
