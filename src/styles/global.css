@@ -1,0 +1,8 @@
+:root {
+    --section-space: 16rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}

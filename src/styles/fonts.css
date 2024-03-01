@@ -1,0 +1,31 @@
+/* Boska */
+@font-face {
+  font-family: 'Boska';
+  src: url('/assets/fonts/Boska/Boska-Variable.woff2') format('woff2'),
+       url('/assets/fonts/Boska/Boska-Variable.woff') format('woff'),
+       url('/assets/fonts/Boska/Boska-Variable.ttf') format('truetype');
+       font-weight: 200 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/assets/fonts/Boska/Boska-VariableItalic.woff2') format('woff2'),
+       url('/assets/fonts/Boska/Boska-VariableItalic.woff') format('woff'),
+       url('/assets/fonts/Boska/Boska-VariableItalic.ttf') format('truetype');
+       font-weight: 200 900;
+       font-display: swap;
+       font-style: italic;
+}
+
+/* Boska */
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/Outfit/Outfit-Variable.woff2') format('woff2'),
+       url('/assets/fonts/Outfit/Outfit-Variable.woff') format('woff'),
+       url('/assets/fonts/Outfit/Outfit-Variable.ttf') format('truetype');
+       font-weight: 200 900;
+       font-display: swap;
+       font-style: normal;
+}
