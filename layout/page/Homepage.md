@@ -84,8 +84,7 @@ sections:
     width: 4
     id: info
     _template: columns
-  - url: >-
-      /uploads/mito_11_top_view_of_an_appetising_healthy_flatbread_with_tomato_83415571-3545-4684-823a-a3fc8ad8efae.png
+  - url: ''
     offset: 10
     _template: background_image
 ---
