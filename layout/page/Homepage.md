@@ -30,7 +30,7 @@ sections:
             content_align: end
             _template: rich_text
       - paragraphs:
-          - image: /Courtney and Linda.jpg
+          - image: ''
             _template: image
     width: 6
     id: who-are-we
