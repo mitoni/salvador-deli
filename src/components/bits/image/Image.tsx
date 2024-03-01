@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { useMantineTheme } from "@mantine/core";
 import NextImage, { ImageProps } from "next/image";
 import { Template } from "tinacms";
 import { tinaField } from "tinacms/dist/react";
@@ -10,6 +11,8 @@ type Props = ImageProps & {
 function Image(props: Props) {
   const { image } = props;
 
+  const theme = useMantineTheme();
+
   return (
     <div
       data-tina-field={tinaField(props, "image")}
@@ -19,6 +22,10 @@ function Image(props: Props) {
         height: 100%;
         min-height: 512px;
         filter: drop-shadow(0 0 100px #1a000000);
+
+        @media (max-width: ${theme.breakpoints.sm}) {
+          min-height: 100vw;
+        }
       `}
     >
       {image ? (

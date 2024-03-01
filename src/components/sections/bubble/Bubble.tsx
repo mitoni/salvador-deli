@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { useMantineTheme } from "@mantine/core";
 import { ComponentPropsWithoutRef } from "react";
 import { Template } from "tinacms";
 
@@ -11,23 +12,41 @@ type Props = ComponentPropsWithoutRef<"div"> & {
 function Bubble(props: Props) {
   const { position = "left", color1, color2, ...args } = props;
 
+  const theme = useMantineTheme();
+
   return (
     <div
       className={css`
         position: absolute;
-        ${position === "left" ? "left" : "right"}:0;
-        transform: translate(${position === "left" ? "-50%" : "50%"}, -50%);
-        width: 200vh;
+        left: 0;
+        right: 0;
         height: 200vh;
-        background: radial-gradient(${color1}, ${color2});
-        opacity: 0.1;
-        border-radius: 100%;
-        filter: blur(66px);
-        pointer-events: none;
+        overflow: hidden;
+
+        @media (max-width: ${theme.breakpoints.sm}) {
+          height: 100vh;
+        }
       `}
-      {...args}
     >
-      Bubble
+      <div
+        className={css`
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          ${position === "left" ? "left" : "right"}:0;
+          transform: translate(${position === "left" ? "-50%" : "50%"});
+          background: radial-gradient(${color1}, ${color2});
+          border-radius: 100%;
+          pointer-events: none;
+          opacity: 0.1;
+          filter: blur(66px);
+
+          @media (max-width: ${theme.breakpoints.sm}) {
+            width: 200%;
+          }
+        `}
+        {...args}
+      />
     </div>
   );
 }

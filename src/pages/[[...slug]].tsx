@@ -14,10 +14,10 @@ export default function Slug(
   const { data } = useTina(props);
 
   return (
-    <>
+    <main>
       <Menu {...data?.menu} />
       <Page {...data?.page} />
-    </>
+    </main>
   );
 }
 

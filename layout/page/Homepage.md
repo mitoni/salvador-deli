@@ -1,7 +1,10 @@
 ---
 url: /
 sections:
-  - _template: Bubble
+  - position: right
+    color1: '#FF6969'
+    color2: '#FFF9DE'
+    _template: Bubble
   - blocks:
       - paragraphs:
           - content: >

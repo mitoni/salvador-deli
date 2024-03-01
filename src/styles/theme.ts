@@ -7,12 +7,12 @@ export const theme = createTheme({
   headings: {
     fontFamily: "Boska",
     sizes: {
-      h1: { fontSize: "5.61rem", lineHeight: "200%" },
-      h2: { fontSize: "4.209rem", lineHeight: "200%" },
-      h3: { fontSize: "3.157rem", lineHeight: "200%" },
-      h4: { fontSize: "2.369rem", lineHeight: "200%" },
-      h5: { fontSize: "1.777rem", lineHeight: "200%" },
-      h6: { fontSize: "1.333rem", lineHeight: "200%" },
+      h1: { fontSize: "5.61rem" },
+      h2: { fontSize: "4.209rem" },
+      h3: { fontSize: "3.157rem" },
+      h4: { fontSize: "2.369rem" },
+      h5: { fontSize: "1.777rem" },
+      h6: { fontSize: "1.333rem" },
     },
   },
 });

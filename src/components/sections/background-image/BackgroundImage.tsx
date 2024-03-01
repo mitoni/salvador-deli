@@ -10,26 +10,35 @@ type Props = React.ComponentPropsWithoutRef<"div"> & {
 
 function BackgroundImage(props: Props) {
   const { position, url, offset = 0, ...args } = props;
+
   return (
     <div
-      data-tina-field={tinaField(props, "url")}
       className={css`
         position: absolute;
-        ${position === "left" ? "left" : "right"}:0;
-        transform: translate(
-          ${position === "left" ? "-40%" : "40%"},
-          ${-50 + offset}%
-        );
-        width: 60vw;
+        left: 0;
+        right: 0;
         height: 60vw;
-        background-image: url(${url});
-        background-size: contain;
-        background-repeat: no-repeat;
-        mix-blend-mode: multiply;
+        overflow: hidden;
+        transform: translateY(${-50 + offset}%);
         z-index: -1;
       `}
-      {...args}
-    />
+    >
+      <div
+        data-tina-field={tinaField(props, "url")}
+        className={css`
+          position: absolute;
+          ${position === "left" ? "left" : "right"}:0;
+          transform: translateX(${position === "left" ? "-40%" : "40%"});
+          width: 60vw;
+          height: 100%;
+          background-image: url(${url});
+          background-size: contain;
+          background-repeat: no-repeat;
+          mix-blend-mode: multiply;
+        `}
+        {...args}
+      />
+    </div>
   );
 }
 

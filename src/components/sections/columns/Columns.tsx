@@ -33,7 +33,7 @@ function Columns(props: Props) {
           <MotionCol
             component={motion.div}
             key={index}
-            span={width ?? 6}
+            span={{ sm: 12, md: width ?? 6 }}
             initial={{ opacity: 0, translateY: 50 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             viewport={{ once: true, amount: 0.5 }}
