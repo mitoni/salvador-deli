@@ -30,7 +30,6 @@ export default defineConfig({
   },
 
   cmsCallback: (cms) => {
-    console.log(cms);
     return cms;
   },
 
