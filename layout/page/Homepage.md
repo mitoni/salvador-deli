@@ -80,7 +80,9 @@ sections:
     width: 4
     id: info
     _template: columns
-  - url: /uploads/flatbread_tomato.png
+  - url: >-
+      /uploads/mito_11_a_flatbread_with_tomatoes_mozzarellas_and_other_healthy_f9fc58e4-677b-4637-ad79-6403b8706fad.png
+    position: right
     offset: 10
     _template: background_image
 ---
