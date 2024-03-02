@@ -1,4 +1,4 @@
-import { Grid } from "@mantine/core";
+import { Grid, useMantineTheme } from "@mantine/core";
 import { ComponentPropsWithoutRef } from "react";
 import { Template } from "tinacms";
 import { richText } from "../../bits/rich-text/RichText";
@@ -9,6 +9,7 @@ import { bits } from "../../bits";
 import { image } from "../../bits/image/Image";
 import Anchor from "../../bits/anchor/Anchor";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "@mantine/hooks";
 
 type Props = ComponentPropsWithoutRef<"section"> & PageSectionsColumns;
 
@@ -16,6 +17,9 @@ const MotionCol = motion(Grid.Col);
 
 function Columns(props: Props) {
   const { blocks, width, id, ...args } = props;
+
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   return (
     <Grid
@@ -36,7 +40,7 @@ function Columns(props: Props) {
             span={{ sm: 12, md: width ?? 6 }}
             initial={{ opacity: 0, translateY: 50 }}
             whileInView={{ opacity: 1, translateY: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: isMobile ? 0 : 0.5 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             {block?.paragraphs?.map((paragraph, index) => {

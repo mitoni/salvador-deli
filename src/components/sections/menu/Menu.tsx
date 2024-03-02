@@ -4,8 +4,6 @@ import { Collection } from "tinacms";
 import { MenuPartsFragment } from "../../../../tina/__generated__/types";
 import { Center, Flex, useMantineTheme } from "@mantine/core";
 import { css } from "@emotion/css";
-import { on } from "events";
-import { useMediaQuery } from "@mantine/hooks";
 
 type Props = ComponentPropsWithoutRef<"div"> & MenuPartsFragment;
 

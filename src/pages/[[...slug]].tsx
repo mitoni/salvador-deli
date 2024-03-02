@@ -7,7 +7,6 @@ import Menu from "../components/sections/menu/Menu";
 export default function Slug(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  console.log({ props });
   const { data } = useTina(props);
 
   return (
