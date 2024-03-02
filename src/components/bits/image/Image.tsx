@@ -21,7 +21,7 @@ function Image(props: Props) {
         width: 100%;
         height: 100%;
         min-height: 512px;
-        filter: drop-shadow(0 0 100px #1a000000);
+        filter: drop-shadow(0 0 100px #33000000);
 
         @media (max-width: ${theme.breakpoints.sm}) {
           min-height: 100vw;
@@ -34,10 +34,16 @@ function Image(props: Props) {
           alt=""
           fill={true}
           className={css`
-            width: auto !important;
             clip-path: circle(45%);
             margin: 0 auto;
             object-fit: cover;
+            box-sizing: border-box;
+
+            @media (max-width: ${theme.breakpoints.sm}) {
+              width: 100%;
+              clip-path: none;
+              border-radius: ${theme.radius.xl};
+            }
           `}
         />
       ) : null}

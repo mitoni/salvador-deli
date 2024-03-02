@@ -19,7 +19,7 @@ function Hero() {
           background: linear-gradient(
             to top,
             rgba(255, 255, 255, 1),
-            rgba(255, 255, 255, 0.8)
+            rgba(255, 255, 255, 0.6)
           );
           backdrop-filter: blur(66px);
           z-index: 2;
@@ -81,7 +81,7 @@ function Hero() {
           transform: translateY(50%);
         `}
       >
-        <Squiggle height="100%" color={theme.colors.red[5]} strokeWidth={3} />
+        <Squiggle height="100%" color={theme.colors.red[5]} strokeWidth={5} />
       </Flex>
     </Flex>
   );

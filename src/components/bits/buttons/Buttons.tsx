@@ -44,6 +44,11 @@ function Buttons(props: Props) {
             target={button.target ?? "_self"}
           >
             <Button
+              styles={{
+                root: {
+                  borderRadius: "99rem",
+                },
+              }}
               data-tina-field={tinaField(button, "content")}
               variant={button.variant ?? "primary"}
               leftSection={Icon ? <Icon size={15} /> : null}

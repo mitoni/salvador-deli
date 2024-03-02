@@ -31,7 +31,7 @@ function BackgroundImage(props: Props) {
         className={css`
           position: absolute;
           ${position === "left" ? "left" : "right"}:0;
-          transform: translateX(${position === "left" ? "-30%" : "30%"});
+          transform: translateX(${position === "left" ? "-40%" : "40%"});
           width: 50%;
           height: 100%;
           background-image: url(${url});

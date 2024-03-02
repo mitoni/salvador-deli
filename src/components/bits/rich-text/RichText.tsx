@@ -47,11 +47,11 @@ function RichText(props: Props) {
             >
               <Title {...props} order={2} />
               <Wave
-                strokeWidth={10}
+                strokeWidth={12}
                 color={theme.colors.red[5]}
                 className={css`
                   position: absolute;
-                  width: 80px;
+                  width: 100px;
                   margin: 0 auto;
                   transform: translate(-50%, -60%);
                 `}
