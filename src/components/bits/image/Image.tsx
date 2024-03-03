@@ -41,8 +41,6 @@ function Image(props: Props) {
 
             @media (max-width: ${theme.breakpoints.sm}) {
               width: 100%;
-              clip-path: none;
-              border-radius: ${theme.radius.xl};
             }
           `}
         />
