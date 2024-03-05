@@ -60,7 +60,7 @@ function Hero() {
               width: 100%;
               height: 100%;
               background-color: ${theme.colors.gray[9]};
-              mask-image: url(/assets/imgs/hero_logo.png);
+              mask-image: url(/assets/imgs/hero_logo.svg);
               mask-size: contain;
               mask-repeat: no-repeat;
               mask-position: center center;
