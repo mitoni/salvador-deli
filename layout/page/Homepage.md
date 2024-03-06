@@ -73,19 +73,21 @@ sections:
               ### Contact
 
 
-              Phone:
+              ###### Phone:
 
 
-              (772) 633-7041
+              ###### (772) 633-7041
 
 
-              Email:\
+              ######
 
+
+              ###### Email:
               [courtney@salvadordelivb.com](mailto\:courtney@salvadordelivb.com
               "Contact Email")
 
 
-              [linda@salvadordeli.com]()
+              ###### [linda@salvadordeli.com]()
             text_align: center
             _template: rich_text
     width: 4
