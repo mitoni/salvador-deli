@@ -70,13 +70,16 @@ sections:
             _template: rich_text
       - paragraphs:
           - content: >
-              ### Contacts
+              ### Contact
 
 
               (772) 633-7041\
 
               [courtney@salvadordelivb.com](mailto\:courtney@salvadordelivb.com
               "Contact Email")
+
+
+              [linda@salvadordeli.com]()
             text_align: center
             _template: rich_text
     width: 4
