@@ -65,7 +65,7 @@ sections:
           - content: |
               ### Hours
 
-              TBA
+              #### TBA
             text_align: center
             _template: rich_text
       - paragraphs:
