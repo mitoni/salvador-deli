@@ -22,7 +22,7 @@ function BackgroundImage(props: Props) {
         right: 0;
         height: 100vh;
         overflow: hidden;
-        transform: translateY(${-50 + offset}%);
+        transform: translateY(${-50 + offset});
         z-index: -1;
       `}
     >

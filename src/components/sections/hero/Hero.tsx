@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { Box, Center, Flex, useMantineTheme } from "@mantine/core";
 import Squiggle from "../../bits/squiggle/Squiggle";
+import React from "react";
 
 function Hero() {
   const theme = useMantineTheme();
@@ -38,6 +39,7 @@ function Hero() {
           object-fit: cover;
           filter: brightness(1.25) saturate(5);
           z-index: 1;
+          transition: opacity 1s linear;
         `}
       />
 

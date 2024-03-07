@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
 export default function Document() {
   return (
@@ -34,7 +35,13 @@ export default function Document() {
         />
       </Head>
 
-      <body>
+      <body
+        style={{
+          visibility: "hidden",
+          opacity: 0,
+          transition: "opacity 50ms ease-in-out",
+        }}
+      >
         <Main />
         <NextScript />
       </body>
