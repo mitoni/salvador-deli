@@ -1,7 +1,6 @@
 import { css } from "@emotion/css";
 import { useMantineTheme } from "@mantine/core";
 import { Template } from "tinacms";
-import { tinaField } from "tinacms/dist/react";
 
 type Props = React.ComponentPropsWithoutRef<"div"> & {
   url?: string;
@@ -16,7 +15,7 @@ function BackgroundImage(props: Props) {
 
   return (
     <div
-      data-tina-field={tinaField(props, "url")}
+      // data-tina-field={tinaField(props, "url")}
       className={css`
         position: absolute;
         left: 0;

@@ -70,6 +70,7 @@ function RichText(props: Props) {
               className={css`
                 object-fit: contain;
               `}
+              sizes="(max-width: 768px) 100vw, 50vw"
               {...props}
             />
           ),

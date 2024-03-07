@@ -5,11 +5,12 @@ import { richText } from "../../bits/rich-text/RichText";
 import { PageSectionsColumns } from "../../../../tina/__generated__/types";
 import { css } from "@emotion/css";
 import { getComponentFromTypeName } from "../../../../utils/components";
-import { bits } from "../../bits";
 import { image } from "../../bits/image/Image";
 import Anchor from "../../bits/anchor/Anchor";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "@mantine/hooks";
+import { components } from "../..";
+import { script } from "../../bits/script/Script";
 
 type Props = ComponentPropsWithoutRef<"section"> & PageSectionsColumns;
 
@@ -45,7 +46,7 @@ function Columns(props: Props) {
           >
             {block?.paragraphs?.map((paragraph, index) => {
               const name = getComponentFromTypeName(paragraph?.__typename);
-              const Component = bits[name as keyof typeof bits];
+              const Component = components[name as keyof typeof components];
 
               if (!Component) {
                 throw new Error("Component not found!");
@@ -81,7 +82,7 @@ export const columns: Template = {
           label: "Paragraphs",
           type: "object",
           list: true,
-          templates: [richText, image],
+          templates: [richText, image, script],
         },
       ],
     },

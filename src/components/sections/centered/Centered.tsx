@@ -4,12 +4,14 @@ import { PageSectionsCentered } from "../../../../tina/__generated__/types";
 import { Flex, useMantineTheme } from "@mantine/core";
 import { richText } from "../../bits/rich-text/RichText";
 import { getComponentFromTypeName } from "../../../../utils/components";
-import { bits } from "../../bits";
+import { components } from "../../";
 import { css } from "@emotion/css";
 import Anchor from "../../bits/anchor/Anchor";
 import { motion } from "framer-motion";
 import { buttons } from "../../bits/buttons/Buttons";
 import { useMediaQuery } from "@mantine/hooks";
+import { script } from "../../bits/script/Script";
+import { html } from "../../bits/html/HTML";
 
 type Props = ComponentPropsWithRef<"div"> & PageSectionsCentered;
 
@@ -39,7 +41,7 @@ function Centered(props: Props) {
 
       {paragraphs?.map((paragraph, index) => {
         const name = getComponentFromTypeName(paragraph?.__typename);
-        const Component = bits[name as keyof typeof bits];
+        const Component = components[name as keyof typeof components];
 
         if (!Component) {
           throw new Error("No Component found");
@@ -60,7 +62,7 @@ export const centered: Template = {
       label: "Paragraphs",
       type: "object",
       list: true,
-      templates: [richText, buttons],
+      templates: [richText, buttons, script, html],
     },
     {
       name: "id",

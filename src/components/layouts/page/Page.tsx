@@ -1,17 +1,18 @@
 import React from "react";
+import Hero from "../../sections/hero/Hero";
+import Footer from "../../sections/footer/Footer";
 import { ComponentProps } from "react";
 import { Collection } from "tinacms";
 import { PagePartsFragment } from "../../../../tina/__generated__/types";
-import { sections as sectionsComponents } from "../../sections";
+import { components } from "../../";
 import { centered } from "../../sections/centered/Centered";
 import { columns } from "../../sections/columns/Columns";
 import { css } from "@emotion/css";
-import Hero from "../../sections/hero/Hero";
-import Footer from "../../sections/footer/Footer";
 import { getComponentFromTypeName } from "../../../../utils/components";
 import { bubble } from "../../sections/bubble/Bubble";
 import { background_image } from "../../sections/background-image/BackgroundImage";
 import { useMantineTheme } from "@mantine/core";
+import { script } from "../../bits/script/Script";
 
 type Props = ComponentProps<"main"> & PagePartsFragment;
 
@@ -36,8 +37,7 @@ function Page(props: Props) {
 
       {sections?.map((section, index) => {
         const name = getComponentFromTypeName(section?.__typename);
-        const Component =
-          sectionsComponents[name as keyof typeof sectionsComponents];
+        const Component = components[name as keyof typeof components];
 
         if (!Component) {
           throw new Error(`No component found`);
@@ -76,7 +76,7 @@ const page: Collection = {
       label: "Sections",
       type: "object",
       list: true,
-      templates: [centered, columns, bubble, background_image],
+      templates: [centered, columns, bubble, background_image, script],
     },
   ],
 };

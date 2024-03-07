@@ -80,7 +80,7 @@ function Menu(props: Props) {
         top: 0;
         left: 0;
         right: 0;
-        z-index: 9;
+        z-index: 99;
         margin: 1rem 1rem 1rem 0;
 
         @media (max-width: ${theme.breakpoints.sm}) {
