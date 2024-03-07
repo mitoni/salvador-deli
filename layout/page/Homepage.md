@@ -60,25 +60,38 @@ sections:
           - content: |
               ### Location
 
-              TBA
+              ##### Walking Tree Brewery 
+
+              ##### 3209 Dodger Rd, Vero Beach, FL 32960 
             text_align: center
             _template: rich_text
       - paragraphs:
           - content: |
               ### Hours
 
-              TBA
+              ##### TBA
             text_align: center
             _template: rich_text
       - paragraphs:
           - content: >
-              ### Contacts
+              ### Contact
 
 
-              (772) 633-7041\
+              ###### Phone:
 
+
+              ###### (772) 633-7041
+
+
+              ######
+
+
+              ###### Email:
               [courtney@salvadordelivb.com](mailto\:courtney@salvadordelivb.com
               "Contact Email")
+
+
+              ###### [linda@salvadordeli.com]()
             text_align: center
             _template: rich_text
     width: 4
