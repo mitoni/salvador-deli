@@ -82,7 +82,7 @@ sections:
               "Contact Email")
 
 
-              ###### [linda@salvadordeli.com]()
+              ###### [linda@salvadordelivb.com]()
             text_align: center
             _template: rich_text
     width: 4
