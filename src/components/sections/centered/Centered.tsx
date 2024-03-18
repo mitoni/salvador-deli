@@ -7,9 +7,7 @@ import { getComponentFromTypeName } from "../../../../utils/components";
 import { components } from "../../";
 import { css } from "@emotion/css";
 import Anchor from "../../bits/anchor/Anchor";
-import { motion } from "framer-motion";
 import { buttons } from "../../bits/buttons/Buttons";
-import { useMediaQuery } from "@mantine/hooks";
 import { script } from "../../bits/script/Script";
 import { html } from "../../bits/html/HTML";
 
@@ -19,11 +17,9 @@ function Centered(props: Props) {
   const { paragraphs, id, ...args } = props;
 
   const theme = useMantineTheme();
-  const isMobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
 
   return (
     <Flex
-      component={motion.div}
       direction="column"
       align="center"
       className={css`
@@ -31,10 +27,6 @@ function Centered(props: Props) {
         padding: 0 0 var(--section-space) 0;
         text-align: center;
       `}
-      initial={{ opacity: 0, translateY: 50 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
-      viewport={{ once: true, amount: isMobile ? 0 : 0.5 }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
       {...args}
     >
       <Anchor id={id} />
