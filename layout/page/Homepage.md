@@ -60,9 +60,7 @@ sections:
           - content: |
               ### Location
 
-              ##### Walking Tree Brewery
-
-              ##### 3209 Dodger Rd, Vero Beach, FL 32960
+              ##### TBA
             text_align: center
             _template: rich_text
       - paragraphs:
