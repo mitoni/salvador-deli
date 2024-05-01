@@ -60,7 +60,9 @@ sections:
           - content: |
               ### Location
 
-              ##### TBA
+              Walking Tree Brewery
+
+              3209 Dodger Rd, Vero Beach, FL 32960
             text_align: center
             _template: rich_text
       - paragraphs:
